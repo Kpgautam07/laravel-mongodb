@@ -1,0 +1,6 @@
+[14-Nov-2019 18:14:00 Asia/Kolkata] PHP Fatal error:  Uncaught PDOException: SQLSTATE[HY000] [1044] Access denied for user 'intasp_smbg_db'@'localhost' to database 'intasp_smbg' in /home/intasp/public_html/smbg/config/connection.php:12
+Stack trace:
+#0 /home/intasp/public_html/smbg/config/connection.php(12): PDO->__construct('mysql:host=loca...', 'intasp_smbg_db', 'QHFmdYi9#!ZW')
+#1 /home/intasp/public_html/smbg/api/smbg-user-api.php(2): include('/home/intasp/pu...')
+#2 {main}
+  thrown in /home/intasp/public_html/smbg/config/connection.php on line 12
