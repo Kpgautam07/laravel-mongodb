@@ -3,13 +3,13 @@
 
 <head>
     <meta charset="utf-8" />
-    <title> @yield('title') | Duaen</title>
+    <title> @yield('title') | Stride</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta content="" name="description" />
     <meta content="" name="author" />
     <!-- App favicon -->
     <!-- logo-dark.png -->
- <link rel="shortcut icon" href="{{ URL::asset('assets/images/')}}">
+ <link rel="shortcut icon" href="{{ URL::asset('assets/images/error-img.png')}}">
     @include('layouts.head')
 </head>
 

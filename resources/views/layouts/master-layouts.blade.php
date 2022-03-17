@@ -9,7 +9,7 @@
     <meta content="Themesbrand" name="author" />
     <!-- App favicon -->
     <!-- login_logo.png -->
-     <link rel="shortcut icon" href="{{ URL::asset('assets/images/')}}">
+     <link rel="shortcut icon" href="{{ URL::asset('assets/images/error-img.png')}}">
     @include('layouts.head')
 </head>
 

@@ -10,7 +10,7 @@
 </style>
 <header id="page-topbar">
     <div class="navbar-header" style="
-    background-color:  #314667;
+    background-color:  #009B9B;
     color: white;
 ">
         <div class="d-flex">
@@ -20,11 +20,11 @@
                 <a href="javascript:void(0);" class="logo logo-dark">
                     <span class="logo-sm">
                         <!-- logo-dark.png -->
-                        <img src="/assets/images/" alt="" style="cursor: default;" height="22">
+                        <img src="assets/images/error-img.png" alt="" style="cursor: default;" height="22">
                     </span>
                     <span class="logo-lg">
                         <!-- logo-dark.png -->
-                        <img src="/assets/images/logo-dark.png" alt="" style="cursor: default;" height="17">
+                        <img src="assets/images/error-img.png" alt="" style="cursor: default;" height="17">
                     </span>
                 </a>
 
@@ -35,7 +35,7 @@
                     </span>
                     <span class="logo-lg">
                         <!-- logo-dark.png -->
-                       <img src="/assets/images/" alt="">
+                       <img src="assets/images/error-img.png" alt="">
                 </a>
 
             </div>

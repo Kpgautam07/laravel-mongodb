@@ -1,6 +1,6 @@
 @if(Auth::user()->name != "Admin")
 
-<footer class="footer" style="left: 0px! important; background-color: #EDEDED;">
+<footer class="footer" style="left: 0px! important; background-color: white; color:black;">
     <div class="container-fluid" style="align-content: center;justify-content: center;display: flex;">
         </div>
 

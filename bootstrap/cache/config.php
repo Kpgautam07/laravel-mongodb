@@ -196,7 +196,7 @@
       'file' => 
       array (
         'driver' => 'file',
-        'path' => 'E:\\laravel_mongo\\storage\\framework/cache/data',
+        'path' => 'E:\\laravel-mongodb\\storage\\framework/cache/data',
       ),
       'memcached' => 
       array (
@@ -430,7 +430,7 @@
     ),
     'temporary_files' => 
     array (
-      'local_path' => 'E:\\laravel_mongo\\storage\\framework/laravel-excel',
+      'local_path' => 'E:\\laravel-mongodb\\storage\\framework/laravel-excel',
       'remote_disk' => NULL,
       'remote_prefix' => NULL,
       'force_resync_remote' => NULL,
@@ -445,12 +445,12 @@
       'local' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\laravel_mongo\\public\\uploads',
+        'root' => 'E:\\laravel-mongodb\\public\\uploads',
       ),
       'public' => 
       array (
         'driver' => 'local',
-        'root' => 'E:\\laravel_mongo\\storage\\app/public',
+        'root' => 'E:\\laravel-mongodb\\storage\\app/public',
         'url' => 'https://smc.sapphiresolutions.in.net/storage',
         'visibility' => 'public',
       ),
@@ -496,13 +496,13 @@
       'single' => 
       array (
         'driver' => 'single',
-        'path' => 'E:\\laravel_mongo\\storage\\logs/laravel.log',
+        'path' => 'E:\\laravel-mongodb\\storage\\logs/laravel.log',
         'level' => 'debug',
       ),
       'daily' => 
       array (
         'driver' => 'daily',
-        'path' => 'E:\\laravel_mongo\\storage\\logs/laravel.log',
+        'path' => 'E:\\laravel-mongodb\\storage\\logs/laravel.log',
         'level' => 'debug',
         'days' => 14,
       ),
@@ -571,7 +571,7 @@
       'theme' => 'default',
       'paths' => 
       array (
-        0 => 'E:\\laravel_mongo\\resources\\views/vendor/mail',
+        0 => 'E:\\laravel-mongodb\\resources\\views/vendor/mail',
       ),
     ),
     'log_channel' => NULL,
@@ -680,7 +680,7 @@
     'lifetime' => '120',
     'expire_on_close' => true,
     'encrypt' => false,
-    'files' => 'E:\\laravel_mongo\\storage\\framework/sessions',
+    'files' => 'E:\\laravel-mongodb\\storage\\framework/sessions',
     'connection' => NULL,
     'table' => 'sessions',
     'store' => NULL,
@@ -700,9 +700,9 @@
   array (
     'paths' => 
     array (
-      0 => 'E:\\laravel_mongo\\resources\\views',
+      0 => 'E:\\laravel-mongodb\\resources\\views',
     ),
-    'compiled' => 'E:\\laravel_mongo\\storage\\framework\\views',
+    'compiled' => 'E:\\laravel-mongodb\\storage\\framework\\views',
   ),
   'flare' => 
   array (

@@ -30,7 +30,7 @@ Route::get('create_test', 'SkoteController@create');
 Route::post('keep-live', 'SkoteController@live');
 
 Route::get('/admin', 'HomeController@root')->name('home');
-Route::get('/admin/index', 'HomeController@index');
+Route::get('/admin', 'HomeController@index');
 
 
 

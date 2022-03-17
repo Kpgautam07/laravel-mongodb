@@ -31,7 +31,7 @@ body {
 @endsection
 @section('body')
 
-<body style="background-color: #1B3F60;">
+<body style="background-color:#009B9B;">
 
     @endsection
 
@@ -135,7 +135,7 @@ body {
                             </div>
 
                             <div class="mt-3">
-                                <button class="btn btn-primary btn-block waves-effect waves-light" type="submit" style="background-color:#1B3F60;border-color:#1B3F60;">Log
+                                <button class="btn btn-primary btn-block waves-effect waves-light" type="submit" style="background-color:#009B9B;border-color:#009B9B;">Log
                                     In</button>
                             </div>
 							
