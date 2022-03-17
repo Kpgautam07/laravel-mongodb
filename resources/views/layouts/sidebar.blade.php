@@ -1,6 +1,5 @@
 <!-- ========== Left Sidebar Start ========== -->
 <div class="vertical-menu" style="background-color: #009B9B;">
-
     <div data-simplebar class="h-100">
 
         <!--- Sidemenu -->
@@ -72,7 +71,6 @@
                         <i class="fas fa-bell"></i>
                         <span>Notifications</span>
                     </a>
-                    
                 </li>
             </ul>
         </div>

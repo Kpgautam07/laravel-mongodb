@@ -26,8 +26,37 @@
 
 <!--<link href="{{ URL::asset('assets/css/icons.css')}}" id="app-light" rel="stylesheet" type="text/css">-->
 <style>
+  #vertical-menu-btn{
+    color: white;
+  }
+  #page-header-user-dropdown {
+    color: white;
+}
 #tt {
+  color: white;
   font-size:20px;
   font-family: "Raleway";
 }
+body[data-sidebar=dark] #sidebar-menu ul li a {
+    color:white;
+}
+body[data-sidebar=dark] #sidebar-menu ul li a:hover {
+    color:black;
+}
+body[data-sidebar=dark] #sidebar-menu ul li a i {
+    color:white;
+}
+body[data-sidebar=dark] #sidebar-menu ul li:hover {
+    color:black;
+}
+body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a {
+    color:white;
+}
+body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a i{
+    color:white;
+}
+body[data-sidebar=dark] #sidebar-menu ul li ul.sub-menu li a:hover {
+    color:black;
+}
+
 </style>

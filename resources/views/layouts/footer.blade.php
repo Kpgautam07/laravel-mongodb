@@ -1,10 +1,20 @@
 @if(Auth::user()->name != "Admin")
 
-<footer class="footer" style="left: 0px! important; background-color: white; color:black;">
-    <div class="container-fluid" style="align-content: center;justify-content: center;display: flex;">
-        </div>
-
-</footer>
+<footer class="footer" style="background-color: #333333;">
+                   <div class="container-fluid">
+                        <div class="row">
+                            <div class="col-sm-6" style="color: #ffff;">
+                                <script>document.write(new Date().getFullYear())</script> &copy; Sapphire.
+                            </div>
+              <div class="col-sm-2"></div>
+                            <div class="col-sm-4" style="color: #ffff;">
+                                <div class="text-sm-end d-none d-sm-block">
+                                    Design &amp; Develop by Sapphire Software Solutions
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
 @endif
 <script>
 function digi() {

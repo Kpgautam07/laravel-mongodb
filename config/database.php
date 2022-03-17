@@ -46,8 +46,8 @@ return [
 
         'mongodb' => [
                 'driver' => 'mongodb',
-                'dsn' => env('DB_URI', 'mongodb+srv://kp:kpgautam%40123@cluster0.pcxlh.mongodb.net/myFirstDatabase?retryWrites=true&w=majority'),
-                'database' => 'myFirstDatabase',
+                'dsn' => env('DB_URI', 'mongodb+srv://kp:kpgautam%40123@cluster0.pcxlh.mongodb.net/stride?retryWrites=true&w=majority'),
+                'database' => 'stride',
             ],
 
             
