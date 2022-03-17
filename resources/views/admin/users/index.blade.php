@@ -59,10 +59,17 @@
                                         <td>{{$usr['email']}}</td>
                                         <td>{{$usr['mobile_no']}}</td>
                                         <td>{{$usr['user_type']}}</td>
-                                        <?php if($usr['status'] == '1'){ ?>
-                                        <td id="{{$usr['_id']}}" ><span class="btn btn-block btn-success btn-sm status" data-id = "{{$usr['_id']}}" data-status = "{{$usr['status']}}" onclick="updatestatus({{$usr['_id']}},{{$usr['status']}})">Active</span></td><?php } else { ?>
-                                    
-                                        <td id="{{$usr['_id']}}" ><span class="btn btn-block btn-danger btn-sm status" data-id = "{{$usr['_id']}}" data-status = "{{$usr['status']}}" onclick="updatestatus({{$usr['_id']}},{{$usr['status']}})">Inactive</span></td><?php } ?>
+                                        @if($usr['status'] == '1')
+                                            <td id="{{$usr['_id']}}">
+                                                <span class="btn btn-block btn-success btn-sm status" data-id = "{{$usr['_id']}}" data-status = "{{$usr['status']}}" onclick="updatestatus({{$usr['_id']}},{{$usr['status']}})">
+                                                Active</span>
+                                            </td>
+                                        @else
+                                            <td id="{{$usr['_id']}}">
+                                                <span class="btn btn-block btn-danger btn-sm status" data-id = "{{$usr['_id']}}" data-status = "{{$usr['status']}}" onclick="updatestatus({{$usr['_id']}},{{$usr['status']}})">
+                                                Inactive</span>
+                                            </td>
+                                        @endif
                                         <td>
                                             <a href=""  class="btn btn-outline-secondary btn-sm edit" title="Edit"><i class="fas fa-pencil-alt"></i></a>
                                             <a href=""  class="btn btn-outline-secondary btn-sm edit" title="View"><i class="fas fa-eye"></i></a>
@@ -95,25 +102,25 @@
 <script>
             function updatestatus(id,status)
             {
-            $.ajax({
-            type: "POST",
-            url: '{{route("users_status")}}',
-            data: {'status': status, 'id': _id, "_token": "{{ csrf_token() }}"},
-            success: function(data){
-              if(data.return =='Active')
-              {
-                status = 1;
-                var html = '<span class="btn btn-block btn-success btn-sm status" data-id ="'+_id+'" data-status = "'+status+'" onclick="updatestatus('+_id+','+status+')">Active</span>';
-              }
-              else
-              {
-                status = 0;
-                var html = '<span class="btn btn-block btn-danger btn-sm status" data-id = "'+_id+'" data-status = "'+status+'" onclick="updatestatus('+_id+','+status+')">Inactive</span>';
-              }
-              $("#"+_id).empty();
-              $("#"+_id).append(html);
-            }
-        });
+                $.ajax({
+                    type: "POST",
+                    url: '{{route("users_status")}}',
+                    data: {'status': status, 'id': id, "_token": "{{ csrf_token() }}"},
+                    success: function(data){
+                      if(data.return =='Active')
+                      {
+                        status = 1;
+                        var html = '<span class="btn btn-block btn-success btn-sm status" data-id ="'+id+'" data-status = "'+status+'" onclick="updatestatus('+_id+','+status+')">Active</span>';
+                      }
+                      else
+                      {
+                        status = 0;
+                        var html = '<span class="btn btn-block btn-danger btn-sm status" data-id = "'+id+'" data-status = "'+status+'" onclick="updatestatus('+id+','+status+')">Inactive</span>';
+                      }
+                      $("#"+id).empty();
+                      $("#"+id).append(html);
+                    }
+                });
             }
 </script>
 @endsection
